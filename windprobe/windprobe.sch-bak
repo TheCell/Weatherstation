@@ -1,0 +1,49 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74xx:74HC590 U?
+U 1 1 5DDD3B43
+P 3250 3000
+F 0 "U?" H 3250 3881 50  0000 C CNN
+F 1 "74HC590" H 3250 3790 50  0000 C CNN
+F 2 "" H 3250 3050 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC590.pdf" H 3250 3050 50  0001 C CNN
+	1    3250 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC590 U?
+U 1 1 5DDD4BA0
+P 3300 4600
+F 0 "U?" H 3300 5481 50  0000 C CNN
+F 1 "74HC590" H 3300 5390 50  0000 C CNN
+F 2 "" H 3300 4650 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC590.pdf" H 3300 4650 50  0001 C CNN
+	1    3300 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Interface_Expansion:MCP23017_SO U?
+U 1 1 5DDD6BCF
+P 1800 3800
+F 0 "U?" H 1800 5081 50  0000 C CNN
+F 1 "MCP23017_SO" H 1800 4990 50  0000 C CNN
+F 2 "Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm" H 2000 2800 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 2000 2700 50  0001 L CNN
+	1    1800 3800
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
