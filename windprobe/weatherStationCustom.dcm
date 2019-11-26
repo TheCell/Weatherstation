@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 74LVT14
+D 3.3 V hex inverter Schmitt trigger
+K schmitt, trigger
+$ENDCMP
+#
+#End Doc Library

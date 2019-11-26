@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:windprobe-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -16,34 +17,95 @@ $EndDescr
 $Comp
 L 74xx:74HC590 U?
 U 1 1 5DDD3B43
-P 3250 3000
-F 0 "U?" H 3250 3881 50  0000 C CNN
-F 1 "74HC590" H 3250 3790 50  0000 C CNN
-F 2 "" H 3250 3050 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC590.pdf" H 3250 3050 50  0001 C CNN
-	1    3250 3000
+P 7450 2300
+F 0 "U?" H 7450 3181 50  0000 C CNN
+F 1 "74HC590" H 7450 3090 50  0000 C CNN
+F 2 "" H 7450 2350 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC590.pdf" H 7450 2350 50  0001 C CNN
+	1    7450 2300
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74HC590 U?
 U 1 1 5DDD4BA0
-P 3300 4600
-F 0 "U?" H 3300 5481 50  0000 C CNN
-F 1 "74HC590" H 3300 5390 50  0000 C CNN
-F 2 "" H 3300 4650 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC590.pdf" H 3300 4650 50  0001 C CNN
-	1    3300 4600
+P 7500 4350
+F 0 "U?" H 7500 5231 50  0000 C CNN
+F 1 "74HC590" H 7500 5140 50  0000 C CNN
+F 2 "" H 7500 4400 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC590.pdf" H 7500 4400 50  0001 C CNN
+	1    7500 4350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Interface_Expansion:MCP23017_SO U?
 U 1 1 5DDD6BCF
-P 1800 3800
-F 0 "U?" H 1800 5081 50  0000 C CNN
-F 1 "MCP23017_SO" H 1800 4990 50  0000 C CNN
-F 2 "Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm" H 2000 2800 50  0001 L CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 2000 2700 50  0001 L CNN
-	1    1800 3800
+P 5450 3250
+F 0 "U?" H 5450 4531 50  0000 C CNN
+F 1 "MCP23017_SO" H 5450 4440 50  0000 C CNN
+F 2 "Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm" H 5650 2250 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 5650 2150 50  0001 L CNN
+	1    5450 3250
 	1    0    0    -1  
 $EndComp
+NoConn ~ 7850 2700
+NoConn ~ 7900 4750
+$Comp
+L power:GND #PWR?
+U 1 1 5DDE0DF3
+P 7550 3100
+F 0 "#PWR?" H 7550 2850 50  0001 C CNN
+F 1 "GND" H 7555 2927 50  0000 C CNN
+F 2 "" H 7550 3100 50  0001 C CNN
+F 3 "" H 7550 3100 50  0001 C CNN
+	1    7550 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DDE2476
+P 7950 5250
+F 0 "#PWR?" H 7950 5000 50  0001 C CNN
+F 1 "GND" H 7955 5077 50  0000 C CNN
+F 2 "" H 7950 5250 50  0001 C CNN
+F 3 "" H 7950 5250 50  0001 C CNN
+	1    7950 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DDEA6F2
+P 1150 3000
+F 0 "R?" V 1357 3000 50  0000 C CNN
+F 1 "4.7 kOhm" V 1266 3000 50  0000 C CNN
+F 2 "" V 1080 3000 50  0001 C CNN
+F 3 "~" H 1150 3000 50  0001 C CNN
+	1    1150 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5DDEB06F
+P 1500 3150
+F 0 "C?" H 1615 3196 50  0000 L CNN
+F 1 "180nF" H 1615 3105 50  0000 L CNN
+F 2 "" H 1538 3000 50  0001 C CNN
+F 3 "~" H 1500 3150 50  0001 C CNN
+	1    1500 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 3000 1500 3000
+$Comp
+L power:GND #PWR?
+U 1 1 5DDF0FBF
+P 1500 3500
+F 0 "#PWR?" H 1500 3250 50  0001 C CNN
+F 1 "GND" H 1505 3327 50  0000 C CNN
+F 2 "" H 1500 3500 50  0001 C CNN
+F 3 "" H 1500 3500 50  0001 C CNN
+	1    1500 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 3300 1500 3500
 $EndSCHEMATC
