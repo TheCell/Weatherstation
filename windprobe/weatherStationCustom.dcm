@@ -3,6 +3,7 @@ EESchema-DOCLIB  Version 2.0
 $CMP 74LVT14
 D 3.3 V hex inverter Schmitt trigger
 K schmitt, trigger
+F https://assets.nexperia.com/documents/data-sheet/74HC590.pdf
 $ENDCMP
 #
 #End Doc Library
