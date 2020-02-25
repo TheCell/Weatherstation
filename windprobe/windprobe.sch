@@ -362,7 +362,7 @@ NoConn ~ 4950 2400
 NoConn ~ 4950 2300
 NoConn ~ 4950 2200
 Wire Wire Line
-	7550 4750 4050 4750
+	7550 4750 6950 4750
 Wire Wire Line
 	4050 4750 4050 6750
 Wire Wire Line
@@ -982,9 +982,38 @@ Wire Wire Line
 Connection ~ 2700 1600
 Wire Wire Line
 	3250 1600 3650 1600
+Connection ~ 3650 1600
+$Comp
+L Device:R R6
+U 1 1 5E4C5025
+P 6950 4500
+F 0 "R6" H 7020 4546 50  0000 L CNN
+F 1 "4.7k" H 7020 4455 50  0000 L CNN
+F 2 "" V 6880 4500 50  0001 C CNN
+F 3 "~" H 6950 4500 50  0001 C CNN
+	1    6950 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 4650 6950 4750
+Connection ~ 6950 4750
+Wire Wire Line
+	6950 4750 4050 4750
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E4CCE3B
+P 6950 4200
+F 0 "#PWR?" H 6950 4050 50  0001 C CNN
+F 1 "+3V3" H 6965 4373 50  0000 C CNN
+F 2 "" H 6950 4200 50  0001 C CNN
+F 3 "" H 6950 4200 50  0001 C CNN
+	1    6950 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 4350 6950 4200
 Wire Bus Line
 	8500 2300 8500 5400
 Wire Bus Line
 	10950 2700 10950 5400
-Connection ~ 3650 1600
 $EndSCHEMATC
