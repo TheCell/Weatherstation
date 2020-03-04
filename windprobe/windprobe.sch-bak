@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:windprobe-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -13,7 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-NoConn ~ 8400 3100
 $Comp
 L Device:R R1
 U 1 1 5DDEA6F2
@@ -49,31 +49,6 @@ F 3 "" H 3650 2000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3650 1900 3650 2000
-Wire Wire Line
-	7600 4950 7500 4950
-NoConn ~ 8400 5150
-$Comp
-L power:GND #PWR0102
-U 1 1 5DE300F9
-P 7650 5500
-F 0 "#PWR0102" H 7650 5250 50  0001 C CNN
-F 1 "GND" H 7655 5327 50  0000 C CNN
-F 2 "" H 7650 5500 50  0001 C CNN
-F 3 "" H 7650 5500 50  0001 C CNN
-	1    7650 5500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR0103
-U 1 1 5DE30B4D
-P 8300 3900
-F 0 "#PWR0103" H 8300 3750 50  0001 C CNN
-F 1 "+3.3V" H 8315 4073 50  0000 C CNN
-F 2 "" H 8300 3900 50  0001 C CNN
-F 3 "" H 8300 3900 50  0001 C CNN
-	1    8300 3900
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C C3
 U 1 1 5DE345C3
@@ -83,17 +58,6 @@ F 1 "10nF" H 8815 2105 50  0000 L CNN
 F 2 "" H 8738 2000 50  0001 C CNN
 F 3 "~" H 8700 2150 50  0001 C CNN
 	1    8700 2150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C4
-U 1 1 5DE35EFA
-P 8750 4150
-F 0 "C4" H 8865 4196 50  0000 L CNN
-F 1 "10nF" H 8865 4105 50  0000 L CNN
-F 2 "" H 8788 4000 50  0001 C CNN
-F 3 "~" H 8750 4150 50  0001 C CNN
-	1    8750 4150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -107,18 +71,6 @@ F 3 "" H 8700 2300 50  0001 C CNN
 	1    8700 2300
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0106
-U 1 1 5DE3CBF0
-P 8750 4400
-F 0 "#PWR0106" H 8750 4150 50  0001 C CNN
-F 1 "GND" H 8755 4227 50  0000 C CNN
-F 2 "" H 8750 4400 50  0001 C CNN
-F 3 "" H 8750 4400 50  0001 C CNN
-	1    8750 4400
-	1    0    0    -1  
-$EndComp
-Connection ~ 7500 4950
 Wire Wire Line
 	7450 3500 7450 2500
 Wire Wire Line
@@ -128,29 +80,12 @@ Wire Wire Line
 	7450 2400 7600 2400
 Wire Wire Line
 	7450 2400 7450 2500
-Connection ~ 7450 4450
-Wire Wire Line
-	7450 4450 7450 3750
-Wire Wire Line
-	7450 4450 7600 4450
-Wire Wire Line
-	7450 4550 7450 4450
-Wire Wire Line
-	7600 4550 7450 4550
-Wire Wire Line
-	7550 4750 7600 4750
-Wire Wire Line
-	7550 2700 7550 4750
 Wire Wire Line
 	7600 2700 7550 2700
 Wire Wire Line
 	8000 3400 7500 3400
 Wire Wire Line
 	8000 3300 8000 3400
-Wire Wire Line
-	7500 4250 7500 4950
-Wire Wire Line
-	7600 4250 7500 4250
 Wire Wire Line
 	7500 2900 7500 3400
 Connection ~ 7500 2900
@@ -220,17 +155,6 @@ F 1 "GND" H 7505 3327 50  0000 C CNN
 F 2 "" H 7500 3500 50  0001 C CNN
 F 3 "" H 7500 3500 50  0001 C CNN
 	1    7500 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74HC590 U3
-U 1 1 5DDD4BA0
-P 8000 4750
-F 0 "U3" H 8000 5631 50  0000 C CNN
-F 1 "74HC590" H 8000 5540 50  0000 C CNN
-F 2 "" H 8000 4800 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC590.pdf" H 8000 4800 50  0001 C CNN
-	1    8000 4750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -362,24 +286,11 @@ NoConn ~ 4950 2400
 NoConn ~ 4950 2300
 NoConn ~ 4950 2200
 Wire Wire Line
-	7550 4750 4050 4750
-Wire Wire Line
-	4050 4750 4050 6750
-Wire Wire Line
 	4050 6750 750  6750
 Wire Wire Line
 	750  6750 750  4600
 Wire Wire Line
 	750  4600 1100 4600
-Connection ~ 7550 4750
-Wire Wire Line
-	8400 2900 8400 3000
-Wire Wire Line
-	8400 3000 8450 3000
-Wire Wire Line
-	8450 3000 8450 3750
-Wire Wire Line
-	8450 3750 7450 3750
 $Comp
 L Device:C C5
 U 1 1 5DF4ECFD
@@ -414,31 +325,19 @@ Wire Wire Line
 Wire Wire Line
 	9450 2750 8950 2750
 Wire Wire Line
-	8950 2750 8950 5650
-Wire Wire Line
-	8950 5650 5250 5650
-Wire Wire Line
-	5250 5650 5250 3800
+	8950 6150 5250 6150
 Wire Wire Line
 	5250 3800 2700 3800
 Wire Wire Line
 	9450 2850 9050 2850
 Wire Wire Line
-	9050 2850 9050 5750
-Wire Wire Line
-	9050 5750 5100 5750
-Wire Wire Line
-	5100 5750 5100 3900
+	9050 6250 5100 6250
 Wire Wire Line
 	5100 3900 2700 3900
 Wire Wire Line
 	9450 3350 9200 3350
 Wire Wire Line
-	9200 3350 9200 5900
-Wire Wire Line
-	9200 5900 4200 5900
-Wire Wire Line
-	4200 5900 4200 6850
+	9200 6400 4200 6400
 Wire Wire Line
 	4200 6850 850  6850
 Wire Wire Line
@@ -695,22 +594,6 @@ Entry Wire Line
 	8400 2800 8500 2900
 Entry Wire Line
 	8400 2900 8500 3000
-Entry Wire Line
-	8400 4250 8500 4350
-Entry Wire Line
-	8400 4350 8500 4450
-Entry Wire Line
-	8400 4450 8500 4550
-Entry Wire Line
-	8400 4550 8500 4650
-Entry Wire Line
-	8400 4650 8500 4750
-Entry Wire Line
-	8400 4750 8500 4850
-Entry Wire Line
-	8400 4850 8500 4950
-Entry Wire Line
-	8400 4950 8500 5050
 Text Label 10850 3650 0    50   ~ 0
 Bit_0
 Text Label 10850 3750 0    50   ~ 0
@@ -756,22 +639,6 @@ Text Label 8400 2800 0    50   ~ 0
 Bit_6
 Text Label 8400 2900 0    50   ~ 0
 Bit_7
-Text Label 8400 4250 0    50   ~ 0
-Bit_8
-Text Label 8400 4350 0    50   ~ 0
-Bit_9
-Text Label 8400 4450 0    50   ~ 0
-Bit_10
-Text Label 8400 4550 0    50   ~ 0
-Bit_11
-Text Label 8400 4650 0    50   ~ 0
-Bit_12
-Text Label 8400 4750 0    50   ~ 0
-Bit_13
-Text Label 8400 4850 0    50   ~ 0
-Bit_14
-Text Label 8400 4950 0    50   ~ 0
-Bit_15
 Text Label 10850 3950 0    50   ~ 0
 Bit_3
 Text Label 10850 4050 0    50   ~ 0
@@ -799,10 +666,6 @@ Bit_14
 Text Label 10850 3450 0    50   ~ 0
 Bit_15
 Wire Wire Line
-	8000 4050 8000 4000
-Wire Wire Line
-	8000 4000 8300 4000
-Wire Wire Line
 	7500 3400 7500 3500
 Connection ~ 7500 3400
 Wire Wire Line
@@ -813,22 +676,9 @@ Connection ~ 10050 2400
 Wire Wire Line
 	10050 2400 10150 2400
 Wire Wire Line
-	7500 4950 7500 5400
-Wire Wire Line
-	8000 5350 8000 5400
-Wire Wire Line
-	8000 5400 7650 5400
-Wire Wire Line
 	8000 2000 8000 1950
 Wire Wire Line
 	8700 1950 8700 2000
-Wire Wire Line
-	8750 4300 8750 4400
-Wire Wire Line
-	7650 5500 7650 5400
-Connection ~ 7650 5400
-Wire Wire Line
-	7650 5400 7500 5400
 Wire Wire Line
 	4950 1800 5350 1800
 Wire Wire Line
@@ -854,9 +704,6 @@ Wire Wire Line
 Connection ~ 8300 1950
 Wire Wire Line
 	8300 1950 8700 1950
-Wire Wire Line
-	8300 3900 8300 4000
-Connection ~ 8300 4000
 $Comp
 L power:GND #PWR0109
 U 1 1 5E143A35
@@ -930,10 +777,6 @@ Wire Wire Line
 	4350 2100 4100 2100
 Wire Wire Line
 	4100 2100 4100 3500
-Wire Wire Line
-	4100 3500 7450 3500
-Wire Wire Line
-	8300 4000 8750 4000
 $Comp
 L weatherStationCustom:74HC14 U1
 U 1 1 5DDFC7AB
@@ -982,9 +825,261 @@ Wire Wire Line
 Connection ~ 2700 1600
 Wire Wire Line
 	3250 1600 3650 1600
+Connection ~ 3650 1600
+$Comp
+L Device:R R6
+U 1 1 5E4C5025
+P 6450 4800
+F 0 "R6" H 6520 4846 50  0000 L CNN
+F 1 "4.7k" H 6520 4755 50  0000 L CNN
+F 2 "" V 6380 4800 50  0001 C CNN
+F 3 "~" H 6450 4800 50  0001 C CNN
+	1    6450 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 4950 6450 5050
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E4CCE3B
+P 6450 4500
+F 0 "#PWR?" H 6450 4350 50  0001 C CNN
+F 1 "+3V3" H 6465 4673 50  0000 C CNN
+F 2 "" H 6450 4500 50  0001 C CNN
+F 3 "" H 6450 4500 50  0001 C CNN
+	1    6450 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 4650 6450 4500
+Wire Wire Line
+	8400 3100 8400 3650
+$Comp
+L 74xGxx:74LVC1GU04DRL U5
+U 1 1 5E640CBC
+P 7150 4100
+F 0 "U5" V 7154 4344 50  0000 L CNN
+F 1 "74LVC1GU04DRL" V 7245 4344 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-553" H 7150 3850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc1gu04.pdf" H 7075 4100 50  0001 C CNN
+	1    7150 4100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4100 3500 7450 3500
+Wire Wire Line
+	4200 6400 4200 6850
+Wire Wire Line
+	5100 3900 5100 6250
+Wire Wire Line
+	5250 3800 5250 6150
+Wire Wire Line
+	8950 2750 8950 6150
+Wire Wire Line
+	9050 2850 9050 6250
+Wire Wire Line
+	9200 3350 9200 6400
+$Comp
+L Device:C C4
+U 1 1 5DE35EFA
+P 8750 4450
+F 0 "C4" H 8865 4496 50  0000 L CNN
+F 1 "10nF" H 8865 4405 50  0000 L CNN
+F 2 "" H 8788 4300 50  0001 C CNN
+F 3 "~" H 8750 4450 50  0001 C CNN
+	1    8750 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 4300 8750 4300
+Connection ~ 8300 4300
+Wire Wire Line
+	8300 4200 8300 4300
+Wire Wire Line
+	7650 5700 7500 5700
+Connection ~ 7650 5700
+Wire Wire Line
+	7650 5800 7650 5700
+Wire Wire Line
+	8000 5700 7650 5700
+Wire Wire Line
+	8000 5650 8000 5700
+Wire Wire Line
+	7500 5250 7500 5700
+Wire Wire Line
+	8000 4300 8300 4300
+Wire Wire Line
+	8000 4350 8000 4300
+Text Label 8400 5250 0    50   ~ 0
+Bit_15
+Text Label 8400 5150 0    50   ~ 0
+Bit_14
+Text Label 8400 5050 0    50   ~ 0
+Bit_13
+Text Label 8400 4950 0    50   ~ 0
+Bit_12
+Text Label 8400 4850 0    50   ~ 0
+Bit_11
+Text Label 8400 4750 0    50   ~ 0
+Bit_10
+Text Label 8400 4650 0    50   ~ 0
+Bit_9
+Text Label 8400 4550 0    50   ~ 0
+Bit_8
+Entry Wire Line
+	8400 5250 8500 5350
+Entry Wire Line
+	8400 5150 8500 5250
+Entry Wire Line
+	8400 5050 8500 5150
+Entry Wire Line
+	8400 4950 8500 5050
+Entry Wire Line
+	8400 4850 8500 4950
+Entry Wire Line
+	8400 4750 8500 4850
+Entry Wire Line
+	8400 4650 8500 4750
+Entry Wire Line
+	8400 4550 8500 4650
+Connection ~ 7550 5050
+$Comp
+L 74xx:74HC590 U3
+U 1 1 5DDD4BA0
+P 8000 5050
+F 0 "U3" H 8000 5931 50  0000 C CNN
+F 1 "74HC590" H 8000 5840 50  0000 C CNN
+F 2 "" H 8000 5100 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC590.pdf" H 8000 5100 50  0001 C CNN
+	1    8000 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 4550 7500 4550
+Wire Wire Line
+	7500 4550 7500 5250
+Wire Wire Line
+	7550 3000 7550 5050
+Wire Wire Line
+	7550 5050 7600 5050
+Wire Wire Line
+	7600 4850 7450 4850
+Wire Wire Line
+	7450 4750 7600 4750
+Connection ~ 7500 5250
+$Comp
+L power:+3.3V #PWR0103
+U 1 1 5DE30B4D
+P 8300 4200
+F 0 "#PWR0103" H 8300 4050 50  0001 C CNN
+F 1 "+3.3V" H 8315 4373 50  0000 C CNN
+F 2 "" H 8300 4200 50  0001 C CNN
+F 3 "" H 8300 4200 50  0001 C CNN
+	1    8300 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5DE300F9
+P 7650 5800
+F 0 "#PWR0102" H 7650 5550 50  0001 C CNN
+F 1 "GND" H 7655 5627 50  0000 C CNN
+F 2 "" H 7650 5800 50  0001 C CNN
+F 3 "" H 7650 5800 50  0001 C CNN
+	1    7650 5800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8400 5450
+Wire Wire Line
+	7600 5250 7500 5250
+$Comp
+L power:GND #PWR0106
+U 1 1 5DE3CBF0
+P 8750 4700
+F 0 "#PWR0106" H 8750 4450 50  0001 C CNN
+F 1 "GND" H 8755 4527 50  0000 C CNN
+F 2 "" H 8750 4700 50  0001 C CNN
+F 3 "" H 8750 4700 50  0001 C CNN
+	1    8750 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 4600 8750 4700
+Wire Wire Line
+	4050 5050 4050 6750
+Connection ~ 6450 5050
+Wire Wire Line
+	6450 5050 4050 5050
+Wire Wire Line
+	6450 5050 7550 5050
+Wire Wire Line
+	7150 3650 8400 3650
+Wire Wire Line
+	7350 4000 7350 4100
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E728FB3
+P 7350 4000
+F 0 "#PWR?" H 7350 3850 50  0001 C CNN
+F 1 "+3.3V" H 7365 4173 50  0000 C CNN
+F 2 "" H 7350 4000 50  0001 C CNN
+F 3 "" H 7350 4000 50  0001 C CNN
+	1    7350 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 5E730CFC
+P 7400 4250
+F 0 "C6" H 7515 4296 50  0000 L CNN
+F 1 "10nF" H 7515 4205 50  0000 L CNN
+F 2 "" H 7438 4100 50  0001 C CNN
+F 3 "~" H 7400 4250 50  0001 C CNN
+	1    7400 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E730D02
+P 7400 4400
+F 0 "#PWR?" H 7400 4150 50  0001 C CNN
+F 1 "GND" H 7405 4227 50  0000 C CNN
+F 2 "" H 7400 4400 50  0001 C CNN
+F 3 "" H 7400 4400 50  0001 C CNN
+	1    7400 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 4750 7450 4800
+Wire Wire Line
+	7150 4400 7150 4800
+Wire Wire Line
+	7150 4800 7450 4800
+Connection ~ 7450 4800
+Wire Wire Line
+	7450 4800 7450 4850
+Wire Wire Line
+	7350 4100 7400 4100
+Connection ~ 7350 4100
+Wire Wire Line
+	7150 3900 7150 3650
+$Comp
+L power:GND #PWR?
+U 1 1 5E7862B2
+P 6800 4250
+F 0 "#PWR?" H 6800 4000 50  0001 C CNN
+F 1 "GND" H 6805 4077 50  0000 C CNN
+F 2 "" H 6800 4250 50  0001 C CNN
+F 3 "" H 6800 4250 50  0001 C CNN
+	1    6800 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 4250 6800 4100
+Wire Wire Line
+	6800 4100 6950 4100
 Wire Bus Line
 	8500 2300 8500 5400
 Wire Bus Line
 	10950 2700 10950 5400
-Connection ~ 3650 1600
 $EndSCHEMATC

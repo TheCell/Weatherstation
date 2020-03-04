@@ -11,6 +11,6 @@ def readCounterBytes():
 	return ((higherByte << 8) | lowerByte)
 
 while True:
-	iobits = readCounterBytes()     #this returns the value to 1 decimal place in degrees. 
+	iobits = readCounterBytes()
 	print('Hex: ', hex(iobits))
 	time.sleep(1)
