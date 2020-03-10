@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:windprobe-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -854,17 +853,6 @@ Wire Wire Line
 	6450 4650 6450 4500
 Wire Wire Line
 	8400 3100 8400 3650
-$Comp
-L 74xGxx:74LVC1GU04DRL U5
-U 1 1 5E640CBC
-P 7150 4100
-F 0 "U5" V 7154 4344 50  0000 L CNN
-F 1 "74LVC1GU04DRL" V 7245 4344 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-553" H 7150 3850 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc1gu04.pdf" H 7075 4100 50  0001 C CNN
-	1    7150 4100
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	4100 3500 7450 3500
 Wire Wire Line
@@ -959,8 +947,6 @@ Wire Wire Line
 Wire Wire Line
 	7500 4550 7500 5250
 Wire Wire Line
-	7550 3000 7550 5050
-Wire Wire Line
 	7550 5050 7600 5050
 Wire Wire Line
 	7600 4850 7450 4850
@@ -1015,69 +1001,16 @@ Wire Wire Line
 Wire Wire Line
 	7150 3650 8400 3650
 Wire Wire Line
-	7350 4000 7350 4100
-$Comp
-L power:+3.3V #PWR?
-U 1 1 5E728FB3
-P 7350 4000
-F 0 "#PWR?" H 7350 3850 50  0001 C CNN
-F 1 "+3.3V" H 7365 4173 50  0000 C CNN
-F 2 "" H 7350 4000 50  0001 C CNN
-F 3 "" H 7350 4000 50  0001 C CNN
-	1    7350 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C6
-U 1 1 5E730CFC
-P 7400 4250
-F 0 "C6" H 7515 4296 50  0000 L CNN
-F 1 "10nF" H 7515 4205 50  0000 L CNN
-F 2 "" H 7438 4100 50  0001 C CNN
-F 3 "~" H 7400 4250 50  0001 C CNN
-	1    7400 4250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5E730D02
-P 7400 4400
-F 0 "#PWR?" H 7400 4150 50  0001 C CNN
-F 1 "GND" H 7405 4227 50  0000 C CNN
-F 2 "" H 7400 4400 50  0001 C CNN
-F 3 "" H 7400 4400 50  0001 C CNN
-	1    7400 4400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	7450 4750 7450 4800
-Wire Wire Line
-	7150 4400 7150 4800
 Wire Wire Line
 	7150 4800 7450 4800
 Connection ~ 7450 4800
 Wire Wire Line
 	7450 4800 7450 4850
 Wire Wire Line
-	7350 4100 7400 4100
-Connection ~ 7350 4100
+	7550 2700 7550 5050
 Wire Wire Line
-	7150 3900 7150 3650
-$Comp
-L power:GND #PWR?
-U 1 1 5E7862B2
-P 6800 4250
-F 0 "#PWR?" H 6800 4000 50  0001 C CNN
-F 1 "GND" H 6805 4077 50  0000 C CNN
-F 2 "" H 6800 4250 50  0001 C CNN
-F 3 "" H 6800 4250 50  0001 C CNN
-	1    6800 4250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6800 4250 6800 4100
-Wire Wire Line
-	6800 4100 6950 4100
+	7150 3650 7150 4800
 Wire Bus Line
 	8500 2300 8500 5400
 Wire Bus Line
